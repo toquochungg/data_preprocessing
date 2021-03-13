@@ -502,11 +502,11 @@ def main():
 
     opt = parser.parse_args()
     
-    if not opt.deploy:
-        df_vin = pd.read_csv('train.csv')
-        df_nih = pd.read_csv('BBox_List_2017.csv')
-        class_names = get_cls_names(df_vin)
-        img_list = glob.glob('../*.jpg')
+    # if not opt.deploy:
+        # df_vin = pd.read_csv('train.csv')
+        # df_nih = pd.read_csv('BBox_List_2017.csv')
+        # class_names = get_cls_names(df_vin)
+        # img_list = glob.glob('../*.jpg')
     
     if opt.add_wh_nih:
         full = pd.read_csv('Data_Entry_2017.csv')
